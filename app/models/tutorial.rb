@@ -5,7 +5,7 @@ class Tutorial < ApplicationRecord
 
   def update_positions
     if has_position_zero?
-      update_positions
+      update_positions_true
     end
   end
 
@@ -13,7 +13,7 @@ class Tutorial < ApplicationRecord
     videos.any?(){'position = 0'}
   end
 
-  def update_positions
+  def update_positions_true
     max_position = videos.maximum(:position)
     videos.where('position=?', 0).each do |video|
       max_position += 1

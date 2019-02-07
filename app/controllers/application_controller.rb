@@ -20,9 +20,9 @@ class ApplicationController < ActionController::Base
     Tutorial.find(id).title
   end
 
-  def four_oh_four
-    raise ActionController::RoutingError.new('Not Found')
-  end
+  # def four_oh_four
+  #   raise ActionController::RoutingError.new('Not Found')
+  # end
 
   def user_in_database(username)
     User.user_in_database(username)
