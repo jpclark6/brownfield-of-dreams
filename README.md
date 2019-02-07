@@ -6,16 +6,6 @@ This is the base repo for a brownfield project used at Turing for Backend Mod 3.
 
 Project Spec and Evaluation Rubric: https://github.com/turingschool-examples/brownfield-of-dreams
 
-### Project Board
-
-Students will continue to build on the existing code base using the cards within the following Github Project: https://github.com/turingschool-examples/brownfield-of-dreams/projects/1
-
-**Learning Goals and Labels**
-
-The cards are labeled in a way that correspond to learning goals or to specific areas you might personally want to focus on.
-
-Cards should be completed from top to bottom in the To Do column. Cards labeled `good first issue` are good as filler work and will allow you to practice common Rails skills.
-
 ### About the Project
 
 This is a Ruby on Rails application used to organize YouTube content used for online learning. Each tutorial is a playlist of video segments. Within the application an admin is able to create tags for each tutorial in the database. A visitor or registered user can then filter tutorials based on these tags.
@@ -55,16 +45,39 @@ Run the test suite:
 $ bundle exec rspec
 ```
 
+## API Setup
+We need to run Figaro to create a hidden .yml file to store our API keys locally
+
+```
+$ bundle exec figaro install
+```
+
+Within config/application.yml, add the following keys:
+
+YOUTUBE_API_KEY:
+GITHUB_API_KEY:
+
+GITHUB_OATH_CLIENT_ID:
+GITHUB_OATH_CLIENT_SECRET:
+
+PASSWORD: *random set of characters*
+
+FRIEND_1:     *friend from your github profile*
+FRIEND_2:     *friend from your github profile*
+NOT_FRIEND:   *non-friend from your github profile*
+REPO_1:       *repo from your github profile
+ME:           *your github username*
+
 ## Contributors
 
-* Justin Clark
-* J Aaron Brooks Roberts
+* Justin Clark  [https://github.com/jpclark6](https://github.com/jpclark6)
+* J Aaron Brooks Roberts  [https://github.com/abroberts5](https://github.com/abroberts5)
 
 ## Deployment
 
 Our app is deployed on heroku at:
 
-`http://brownfield-of-dreams-1810.herokuapp.com/`
+* [http://brownfield-of-dreams-1810.herokuapp.com](http://brownfield-of-dreams-1810.herokuapp.com/)
 
 ## Technologies
 * [Stimulus](https://github.com/stimulusjs/stimulus)
