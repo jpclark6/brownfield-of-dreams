@@ -70,14 +70,14 @@ ME:           *your github username*
 
 ## Contributors
 
-* Justin Clark  `https://github.com/jpclark6`
-* J Aaron Brooks Roberts  `https://github.com/abroberts5`
+* Justin Clark  [https://github.com/jpclark6](https://github.com/jpclark6)
+* J Aaron Brooks Roberts  [https://github.com/abroberts5](https://github.com/abroberts5)
 
 ## Deployment
 
 Our app is deployed on heroku at:
 
-`http://brownfield-of-dreams-1810.herokuapp.com/`
+* [http://brownfield-of-dreams-1810.herokuapp.com](http://brownfield-of-dreams-1810.herokuapp.com/)
 
 ## Technologies
 * [Stimulus](https://github.com/stimulusjs/stimulus)
