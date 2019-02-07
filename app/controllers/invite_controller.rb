@@ -18,7 +18,7 @@ class InviteController < ApplicationController
 
   def deliver_if_valid(user_email, my_github)
     if user_email
-      FriendInviterMailer.create(user_email, params[:github_handle], my_github).deliver_now
+      FriendInviterMailer.create(user_email, params[:github_handle], my_github).deliver_later
       flash[:success] = "Successfully sent invite!"
     else
       flash[:error] = "The Github user you selected doesn't have an email address associated with their account."
