@@ -6,6 +6,10 @@ class Admin::Api::V1::TutorialSequencerController < Admin::Api::V1::BaseControll
     render json: tutorial
   end
 
+  def index
+    
+  end
+
   private
 
     def ordered_video_ids

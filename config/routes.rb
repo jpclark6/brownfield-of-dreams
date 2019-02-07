@@ -20,6 +20,7 @@ Rails.application.routes.draw do
     namespace :api do
       namespace :v1 do
         put "tutorial_sequencer/:tutorial_id", to: "tutorial_sequencer#update"
+        get "/test", to: 'tutorial_sequencer#index', as: 'admin_api'
       end
     end
   end
