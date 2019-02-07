@@ -9,11 +9,12 @@ class UsersController < ApplicationController
 
   def create
     user = User.create(user_params)
-    user.save ? user_valid(user) : user_not_valid
+    user.save ? user_valid(user) : user_not_valid(user)
   end
 
-  def user_not_valid
+  def user_not_valid(user)
     flash[:error] = 'Username already exists'
+    @user = user
     render :new
   end
 
