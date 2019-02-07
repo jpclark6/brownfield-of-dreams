@@ -1,7 +1,9 @@
 class ConfirmationNotifierMailer < ApplicationMailer
   def confirm(user)
     @user = user
-    @user.update(confirmation: SecureRandom.hex(15))
-    mail(to: user.email, subject: 'Confirm Email')
+    confirm_code = SecureRandom.hex(15)
+    binding.pry
+    @user.update(confirmation: confirm_code)
+    mail(to: @user.email, subject: 'Confirm Email')
   end
 end
