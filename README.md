@@ -62,11 +62,11 @@ GITHUB_OATH_CLIENT_SECRET:
 
 PASSWORD: *random set of characters*
 
-FRIEND_1:     *friend from your github profile*
-FRIEND_2:     *friend from your github profile*
-NOT_FRIEND:   *non-friend from your github profile*
-REPO_1:       *repo from your github profile
-ME:           *your github username*
+* FRIEND_1:     `friend from your github profile`
+* FRIEND_2:     `friend from your github profile`
+* NOT_FRIEND:   `non-friend from your github profile`
+* REPO_1:       `repo from your github profile`
+* ME:           `your github username`
 
 ## Contributors
 
