@@ -54,13 +54,13 @@ $ bundle exec figaro install
 
 Within config/application.yml, add the following keys:
 
-YOUTUBE_API_KEY:
-GITHUB_API_KEY:
+* YOUTUBE_API_KEY:
+* GITHUB_API_KEY:
 
-GITHUB_OATH_CLIENT_ID:
-GITHUB_OATH_CLIENT_SECRET:
+* GITHUB_OATH_CLIENT_ID:
+* GITHUB_OATH_CLIENT_SECRET:
 
-PASSWORD: *random set of characters*
+* PASSWORD: *random set of characters*
 
 * FRIEND_1:     `friend from your github profile`
 * FRIEND_2:     `friend from your github profile`
